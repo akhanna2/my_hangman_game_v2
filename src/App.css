@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+}
+
+.middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rightside{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+.buttonlist{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(10, auto);
+}
+
+.button{
+    margin: 5px;
+}
