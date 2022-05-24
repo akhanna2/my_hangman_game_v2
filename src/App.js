@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import './App.css';
 import ButtonList from './components/ButtonList'
-import Images from './components/Images'
 import Word from './components/WordList'
 import WordLetters from './components/WordLetters'
 import ShowNotification from './components/ShowNotification'
@@ -36,7 +35,6 @@ function App({maxLives=6}) {
     setCorrectLetters([])
     setWord(Word())
   }
-  
 
   return (
     <div>
