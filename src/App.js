@@ -42,7 +42,7 @@ function App({maxLives=6}) {
       <div className='middle'>
         {/* <Images lives={userLives}/> */}
         <Figure lives={userLives} />
-        <div className='righside'>
+        <div className='rightside'>
           <div>
             <h3>Lives remaining:</h3>
             <h2>{userLives}</h2>

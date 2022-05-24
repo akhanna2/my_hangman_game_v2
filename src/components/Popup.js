@@ -3,9 +3,10 @@ import React from 'react';
 const Popup = ({word, correctLetters, lives, playAgain}) => {
   let finalMessage = '';
   let finalMessageRevealWord = '';
-
-  if(word.length === correctLetters.length) {
-    finalMessage = 'Congratulations! You won!';
+  
+  if(word.split('').every(letter => correctLetters.includes(letter))) {
+    finalMessage = `Congratulations! You won!`;
+    finalMessageRevealWord = `You guessed the word: ${word}`;
   } else if(lives === 0) {
     finalMessage = 'Unfortunately you lost.';
     finalMessageRevealWord = `The word was: ${word}`;

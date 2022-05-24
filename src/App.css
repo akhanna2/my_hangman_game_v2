@@ -8,6 +8,13 @@ body{
 .middle{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+}
+
+.rightside{
+  display: grid;
+  justify-content: left;
+  height: 300px;
 }
 
 .usedbuttons{
@@ -57,11 +64,11 @@ li{
     transition: transform 0.3s ease-in-out;
     margin: 0;
     text-align: center;
+
   }
   
   .notification-container.show {
     display: inline-block;
-    /* transform: translateY(-50px); */
   }
 
 
@@ -112,4 +119,5 @@ li{
   stroke-width: 4px;
   stroke-linecap: round;
   justify-self: right;
+  margin-right: 80px;
 }
