@@ -1,7 +1,6 @@
 body{
     text-align: center;
     background-color: bisque;
-    margin: 0;
     padding: 0;
 }
 
@@ -40,7 +39,7 @@ li{
 .buttonlist{
     display: grid;
     padding: 20px;
-    grid-template-columns: repeat(10, auto);
+    grid-template-columns: repeat(8, auto);
     justify-content: center;
 }
 
