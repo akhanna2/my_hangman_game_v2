@@ -6,4 +6,9 @@ const WordList = [
     'world'
 ] 
 
-export default WordList
+function Word() {
+    let word = WordList[Math.floor(Math.random() * WordList.length)];
+    return word.toUpperCase();
+  }
+
+export default Word

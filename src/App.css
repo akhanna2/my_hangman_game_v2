@@ -1,5 +1,8 @@
 body{
     text-align: center;
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
 }
 
 .middle{
@@ -7,8 +10,20 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 
-.rightside{
-    text-align: center;
+.usedbuttons{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+}
+
+.usedbuttons > .button{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 35px;
 }
 
 li{
@@ -19,8 +34,82 @@ li{
     display: grid;
     padding: 20px;
     grid-template-columns: repeat(10, auto);
+    justify-content: center;
 }
 
 .button{
     margin: 5px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 40px;
+  }
+
+.notification-container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .notification-container.show {
+    display: inline-block;
+    /* transform: translateY(-50px); */
+  }
+
+
+
+  .popup-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup {
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .popup button {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 0;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  
+  .popup button:active {
+    transform: scale(0.98);
+  }
+
+
+
+
+.figure-container {
+  background-color: black;
+  fill: transparent;
+  stroke: white;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  justify-self: right;
 }
