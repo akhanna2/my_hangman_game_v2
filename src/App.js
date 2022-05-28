@@ -40,7 +40,6 @@ function App({maxLives=6}) {
     <div>
       <h1>Hangman</h1>
       <div className='middle'>
-        {/* <Images lives={userLives}/> */}
         <Figure lives={userLives} />
         <div className='rightside'>
           <div>
